@@ -2,4 +2,8 @@ this is the start of my file
 
 use new feature
 
+<<<<<<< HEAD
 continued
+=======
+this is a different change
+>>>>>>> 89b3efee3c47d95de073c32e66f465c03ad5591f
