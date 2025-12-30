@@ -2,6 +2,8 @@
 
 This repo is a hands-on tutorial for learning Git from beginner to intermediate level. Go through these steps chronologically to build your Git skills progressively. Each section builds on the previous one, so don't skip ahead!
 
+**Looking for Git security?** Check out the companion tutorial: [practice-git-security](https://github.com/nathaniellarson/practice-git-security) to learn how to scan for secrets, remove them from history, and prevent security leaks.
+
 Any step that has "(no action)" at the end indicates that no action is required before moving to the next step of the tutorial.
 
 ## Prerequisites
@@ -25,7 +27,7 @@ Branches in Git let you work on different versions of your project at the same t
 3. Check your current status: `git status`. This shows you which branch you're on and if you have any changes. (no action)
 4. Create a new file to work with: `echo "# My Git Practice Project" > project.md`
 5. Stage the file (this prepares it to be committed): `git add project.md`
-6. Commit it (this saves a snapshot of your work): `git commit -m "Initial project file"`
+6. Commit it (this saves a snapshot of your work): `git commit -m "initialize project file"`
 7. Now let's create a `dev` branch where we'll do our development work: `git checkout -b dev`
 8. Verify you're on the new branch: `git branch`. You should see an asterisk (*) next to `dev`. The asterisk shows which branch you're currently on. (no action)
 9. Add content to your file: `echo "\n## Description\nThis project helps me learn Git!" >> project.md`
@@ -318,8 +320,8 @@ Now that you've learned the commands, here are the habits that make you a great 
 172. **Use Main and Dev Branches**: Keep main stable for production. Do all development in dev. Merge to main only when tested. (no action)
 173. **Pull Before Push**: Always `git pull` before `git push` to avoid conflicts. (no action)
 174. **Review Before Committing**: Use `git diff --staged` to review what you're about to commit. (no action)
-175. **Don't Commit Secrets**: Use `.gitignore` for sensitive files. Never commit passwords, API keys, or credentials! (no action)
-176. **Use `.gitignore`**: Create a `.gitignore` file to exclude build artifacts, dependencies, and OS files. (no action)
+175. **Don't Commit Secrets**: Use `.gitignore` for sensitive files. Never commit passwords, API keys, or credentials! For a complete guide on Git security, see the [practice-git-security](https://github.com/nathaniellarson/practice-git-security) tutorial. (no action)
+176. **Use `.gitignore`**: Create a `.gitignore` file to exclude build artifacts, dependencies, and OS files. GitHub maintains helpful [.gitignore templates](https://github.com/github/gitignore) for different languages. (no action)
 177. **Communicate with Your Team**: Before force-pushing or rebasing shared branches, talk to your team! (no action)
 
 ---
@@ -394,7 +396,7 @@ If you see "detached HEAD", you checked out a specific commit instead of a branc
 Congratulations! You've completed the beginner to intermediate Git tutorial. Here's what to explore next:
 
 1. **Set up a remote repository** on GitHub, GitLab, or Bitbucket and practice pushing/pulling
-2. **Learn Git hooks** for automation (pre-commit, pre-push, etc.) - check out the [practice-git-security](https://github.com/ndlarso/practice-git-security) tutorial!
+2. **Learn Git security** - Scan for secrets, remove them from history, and use pre-commit hooks with the [practice-git-security](https://github.com/nathaniellarson/practice-git-security) tutorial!
 3. **Explore Git workflows** (Gitflow, GitHub Flow, trunk-based development)
 4. **Collaborate with others** - the best way to learn is by working on real projects with a team
 5. **Practice, practice, practice** - Git becomes second nature with repetition!
@@ -414,7 +416,7 @@ Found an error or want to improve this tutorial? Feel free to submit a pull requ
 
 ## Related Projects
 
-Check out the companion tutorial on Git security: [practice-git-security](https://github.com/ndlarso/practice-git-security)
+Check out the companion tutorial on Git security: [practice-git-security](https://github.com/nathaniellarson/practice-git-security)
 
 ## License
 
